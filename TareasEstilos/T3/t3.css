@@ -1,0 +1,108 @@
+/* David */
+h1 {
+  color: red;
+  padding: 2rem;
+  margin-top: 0rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  font-size: 8vw;
+  background-color: rgb(32, 32, 32);
+}
+/* Título de las tareas */
+h2 {
+  padding: 1rem;
+  color: rgb(94, 26, 14);
+  font-size: 6vw;
+  text-align: center;
+}
+
+/* Elementos del menú */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.lista {
+  float: left;
+}
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*********************************** Actividad ****************************************/
+
+#row1 {
+  color: teal;
+}
+#row2 {
+  color: red;
+}
+#row3 {
+  color: blue;
+}
+#row4 {
+  color: orange;
+}
+#row5 {
+  color: purple;
+}
+#row6 {
+  color: olive;
+}
+#row7 {
+  color: fuchsia;
+}
+#row8 {
+  color: green;
+}
+
+td + td {
+  background-color: rgb(218, 245, 241);
+}
+td + td + td {
+  background-color: rgb(176, 253, 253);
+}
+td + td + td + td {
+  background-color: rgb(130, 247, 247);
+}

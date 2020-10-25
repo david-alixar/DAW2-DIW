@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 4</title>
+    <link href="t4.css" rel="stylesheet" type="text/css" />
+    <style>
+      h3 {
+        color: gray;
+        font-style: italic;
+      }
+      form {
+        color: red;
+      }
+      #nombre {
+        color: green;
+      }
+      #boton {
+        background-color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="lista"><a href="../index.html">Inicio</a></li>
+      <li class="lista"><a href="../index.html#iesalixar">IES Alixar</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Tareas</a>
+        <div class="dropdown-content">
+          <a href="../T1/t1.html">Tarea 1</a>
+          <a href="../T2/t2.html">Tarea 2</a>
+          <a href="../T3/t3.html">Tarea 3</a>
+          <a href="../T4/t4.html">Tarea 4</a>
+          <a href="../T5/t5.html">Tarea 5</a>
+        </div>
+      </li>
+    </ul>
+
+    <h1>David González Conejero</h1>
+    <h2>Tarea 4. Formularios</h2>
+
+    <h3>Ejemplo de formulario</h3>
+    <form>
+      <p id="nombre">
+        Nombre: <input type="text" name="nombre" maxlength="50" />
+      </p>
+
+      <p>Apellidos: <input type="text" name="apellidos" maxlength="50" /></p>
+
+      <p>
+        Sexo: <input type="radio" name="sexo" value="h" /> hombre
+        <input type="radio" name="sexo" value="m" /> mujer
+      </p>
+
+      <p>Correo: <input type="text" name="correo" maxlength="100" /></p>
+
+      <p>
+        <input type="checkbox" name="info" checked="checked" /> Sí, acepto todo.
+      </p>
+
+      <p>
+        <input id="boton" type="submit" value="Enviar" />
+      </p>
+    </form>
+  </body>
+</html>
