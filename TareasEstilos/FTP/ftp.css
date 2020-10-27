@@ -73,40 +73,20 @@ li.dropdown {
 
 /*********************************** Actividad ****************************************/
 
-table {
-  font-family: Arial, Helvetica, sans-serif;
+div.capturas {
+  width: 80%;
+  background-color: red;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15px;
+}
+
+div.etiqueta {
   text-align: center;
+  padding: 5px;
+  color: white;
+  font-size: 2vw;
 }
 
-table,
-tr,
-th,
-td {
-  border: 1px solid #333;
-  line-height: 2em;
-}
-
-th {
-  background-color: #f5f5f5;
-  padding: 0 0.5em;
-}
-
-td {
-  padding: 0 0.3em;
-}
-
-.moneda {
-  background: #e6f3ff;
-}
-
-tr:nth-child(n + 1) td {
-  text-align: right;
-}
-
-tr:nth-child(2n) {
-  background-color: #ffffcc;
-}
-
-tr:hover {
-  background: #ffff66;
+div.imagenes {
+  padding: 3rem;
 }

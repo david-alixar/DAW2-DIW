@@ -1,0 +1,158 @@
+/* David */
+h1 {
+  color: red;
+  padding: 2rem;
+  margin-top: 0rem;
+  text-align: center;
+  font-size: 8vw;
+  text-shadow: 2px 2px 5px black;
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(#333, white);
+}
+
+h2 {
+  padding: 1rem;
+  color: rgb(121, 36, 21);
+  font-size: 6vw;
+  text-align: center;
+}
+
+/* Foto escudo IES Alixar */
+img {
+  width: 80%;
+  height: 80%;
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+/* Elementos de IES Alixar */
+#iesalixar {
+  padding: 2rem;
+  padding-top: 0rem;
+  font-size: 4vw;
+}
+
+/* Tabla módulos */
+#tablamodulos {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+#tablamodulos td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tablamodulos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablamodulos tr:hover {
+  background-color: #ddd;
+}
+
+#tablamodulos th {
+  padding: 1rem;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Tabla tareas */
+#tablatareas {
+  border-collapse: collapse;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+#tablatareas td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tablatareas tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablatareas tr:hover {
+  background-color: #ddd;
+}
+
+#tablatareas th {
+  padding: 1rem;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+.listaTareas {
+  color: yellowgreen;
+}
+
+/*Menú superior*/
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.lista {
+  float: left;
+}
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Elementos de presentación */
+#presentacion {
+  padding: 2rem;
+  padding-top: 0rem;
+  font-size: 4vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
