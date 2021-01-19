@@ -1,44 +1,97 @@
-/* David */
-h1 {
-  color: red;
-  padding: 2rem;
-  margin-top: 0rem;
-  text-align: center;
-  font-size: 8vw;
-  text-shadow: 2px 2px 5px black;
-  background-color: rgb(32, 32, 32);
-  background-image: linear-gradient(#333, white);
+/**************** CABECERA *****************/
+#header {
+  background-image: linear-gradient(black, rgb(172, 170, 170));
 }
 
-h2 {
-  padding: 1rem;
-  color: rgb(121, 36, 21);
-  font-size: 6vw;
+#titulo {
+  color: white;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-top: 0rem;
   text-align: center;
+  font-size: 3vw;
+}
+
+#subtitulo {
+  color: rgb(39, 38, 38);
+  text-shadow: 1px 1px black;
+  text-align: center;
+  font-size: 3vw;
+}
+
+#subtitulo hr {
+  border-top: 6px solid red;
+  width: 35%;
+  margin-left: auto;
+}
+
+#logocabecera img {
+  width: 15%;
+  height: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  opacity: 1;
+}
+
+/******************** TÍTULOS APARTADOS ****************/
+h2 {
+  padding: 0;
+  padding-top: 1rem;
+  color: black;
+  font-size: 3vw;
+}
+
+hr.linea {
+  border-top: 6px solid red;
+  width: 35%;
+  margin-left: 0;
+}
+
+/************************ IES Alixar *********************/
+#iesalixar {
+  padding: 2rem;
+  padding-top: 0rem;
+  font-size: 2vw;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: rgba(255, 255, 255, 0.603);
 }
 
 /* Foto escudo IES Alixar */
 img {
-  width: 80%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
   opacity: 0.5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img:hover {
   opacity: 1;
 }
 
-/* Elementos de IES Alixar */
-#iesalixar {
-  padding: 2rem;
-  padding-top: 0rem;
-  font-size: 4vw;
+/******************** MÓDULOS *********************/
+#academico {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+  font-size: 2vw;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: rgba(255, 255, 255, 0.603);
 }
 
-/* Tabla módulos */
+/********Tabla módulos **********/
 #tablamodulos {
   border-collapse: collapse;
   width: 80%;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #tablamodulos td,
@@ -58,15 +111,17 @@ img:hover {
 #tablamodulos th {
   padding: 1rem;
   text-align: left;
-  background-color: #4caf50;
+  background-color: rgb(5, 80, 57);
   color: white;
 }
 
-/* Tabla tareas */
+/******************* Tabla tareas ********************/
 #tablatareas {
   border-collapse: collapse;
   width: 80%;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #tablatareas td,
@@ -86,16 +141,19 @@ img:hover {
 #tablatareas th {
   padding: 1rem;
   text-align: left;
-  background-color: #4caf50;
+  background-color: rgb(5, 80, 57);
   color: white;
 }
 
 .listaTareas {
-  color: yellowgreen;
+  color: #4caf50;
 }
 
-/*Menú superior*/
+/********************Menú superior*********************/
 .menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -148,11 +206,71 @@ li.dropdown {
   display: block;
 }
 
-/* Elementos de presentación */
+/************************ Presentación ****************************/
 #presentacion {
   padding: 2rem;
   padding-top: 0rem;
-  font-size: 4vw;
+  font-size: 2vw;
   text-align: justify;
   text-justify: inter-word;
+  background-color: rgba(255, 255, 255, 0.603);
+}
+
+/********* GENERAL BODY ************/
+
+body {
+  font-family: Montserrat, sans-serif;
+  padding-top: 2rem;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(5, 80, 57);
+}
+
+/********** FOOTER *************/
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+#datosFooter {
+  float: left;
+  width: 60%;
+  margin: auto;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+#logoFooter {
+  float: right;
+  width: 25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 3%;
+}
+
+#logoFooter img {
+  opacity: 1;
+  margin-right: 0;
+}
+
+/********** GENERAL CONTAINER ***********/
+
+#container {
+  background-image: url("../img/fondo.jpg");
+  padding-bottom: 1rem;
 }

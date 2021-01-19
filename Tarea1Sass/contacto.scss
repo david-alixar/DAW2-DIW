@@ -1,0 +1,71 @@
+//// @access public
+//// @author David Gonzalez
+
+/*      CONTACTO  */
+
+/// @group contacto
+.contPrincipal {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: $tamanoContacto;
+  }
+}
+
+#portugal {
+  h3 {
+    color: $color-empresa;
+  }
+  .card {
+    width: $anch-100;
+    height: $altura-cards;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+#espana {
+  h3 {
+    color: $color-empresa;
+  }
+  .card {
+    width: $anch-100;
+    height: $altura-cards;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+#info {
+  h3 {
+    color: $color-empresa;
+  }
+  p {
+    text-align: center;
+  }
+}
+#form {
+  text-align: left;
+  h3 {
+    text-align: center;
+  }
+}
+
+/// Responsividad para pc
+/// @group pc
+@media only screen and (min-width: 992px) {
+  #portugal {
+    padding: $padd-medio;
+  }
+  #espana {
+    padding: $padd-medio;
+  }
+  .contPrincipal {
+    a {
+      font-size: 1.5vw;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+//// @access public
+//// @author David Gonzalez
+
+/*   NOSOTROS  */
+
+/// @group nosotros
+#quienesSomos {
+  text-align: center;
+
+  img {
+    width: $anch-100;
+  }
+  h3 {
+    color: $color-empresa;
+    text-align: center;
+  }
+}
+#marcasyalianzas {
+  img {
+    margin-right: auto;
+  }
+}
+
+// Con esta utilidad controlaremos el comportamiento de la página en formato tablet y pc
+/// Responsividad para tablet
+/// @group tablet
+@media only screen and (min-width: 576px) {
+  .fotoNosotros {
+    margin: auto;
+    padding: 1rem;
+  }
+
+  #marcasyalianzas {
+    img {
+      padding-right: $padd-medio;
+      height: 40px;
+      margin: auto;
+    }
+  }
+
+  .fotosMarcas {
+    padding: $padd-medio;
+    img {
+      height: 50px;
+    }
+  }
+}
+
+/// Responsividad para pc
+/// @group pc
+@media only screen and (min-width: 992px) {
+  #mision {
+    padding-right: $padd-medio;
+  }
+
+  #vision {
+    padding-left: $padd-medio;
+  }
+}

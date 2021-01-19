@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Cybertec</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="parteSuperior">
+        <div id="logocabecera">
+          <a href="index.html">
+            <img src="IMG/LogoCybertec.png" alt="Logo" />
+          </a>
+        </div>
+
+        <div id="menu">
+          <a href="Servicios.html" class="btn menu_item ">Servicios</a>
+          <a href="Nosotros.html" class="btn menu_item">Nosotros</a>
+          <a href="Contacto.html" class="btn menu_item">Contacto</a>          
+        </div>
+
+        <div id="logomenu">
+          <span class="icon">
+          <i class="fa fa-bars"></i>
+          </span>
+        </div>
+      </div>
+
+    <div id="principal" class="contPrincipal">
+      <div id="nuestrosServicios">
+        <h2>Nuestros Servicios</h2>
+        <p>
+          Contamos con la experiencia y las habilidades necesarias para prestarles servicios de alta calidad y así mismo cubrir sus necesidades electrónicas de generaciones anteriores o actuales, cumpliendo así con sus expectativas.
+        </p>
+
+        <!-- 4 Cards -->
+        <div id="serviciosCards" class="row">
+          <div class="card col-8 col-sm-4 col-lg-2 textos">
+            <img src="IMG/foto3.jpg" />
+            <h3>Diagnóstico</h3>
+            <p>
+              Mantenemos la filosofía de mejorar constantemente la calidad y eficiencia en nuestros servicios, y como parte de ello, nos hemos enfocado en dar un diagnóstico rápido y preciso.
+              Nuestro sistema de diagnóstico nos ayuda enormemente a alcanzar los objetivos mediante el uso de una base de datos global con soluciónes de problemas de antiguas generaciones, lo cual disminuye en gran medida nuestro tiempo de respuesta.
+            </p>
+          </div>
+          <div id="mantenimiento" class="card col-8 col-sm-4 col-lg-2 textos">
+            <img src="IMG/foto1.jpg" />
+            <h3>Mantenimiento</h3>
+            <p>
+              Realizamos mantenimientos periódicos preventivos en diversos productos y sistemas electrónicos a lo largo de su vida útil para garantizar el máximo rendimiento y así reducir a un mínimo los costes de reparación no planificados. Para ellos, efectuamos inspecciones anuales y reemplazo de componentes según las especificaciones del producto, con el objetivo de prevenir daños irreparables y, por tanto, pérdidas económicas.
+            </p>
+          </div>
+          <div id="reparacion" class="card col-8 col-sm-4 col-lg-2 textos">
+            <img src="IMG/foto2.jpg" />
+            <h3>Reparación</h3>
+            <p class="prueba">
+              Ponemos a su disposición un servicio de reparación de alto nivel, totalmente flexible. Nuestro departamento técnico y taller de servicio está en capacidad de solucionar sus necesidades en relación a los diferentes niveles de reparación, además puede ofrecer consejos de prototipos y respuestas a las inquietudes que surjan en cada caso.
+            </p>
+          </div>
+         
+          <div id="productos" class="card col-8 col-sm-4 col-lg-2 textos">
+            <img src="IMG/foto3.jpg" />
+            <h3>Productos</h3>
+            <p class="prueba">
+              Nos satisface poder poner a su disposición equipos de la máxima calidad, personalizados y adaptados a sus necesidades, por lo que hemos abierto una nueva línea para ofrecerle un amplio y destacado surtido de equipos nuevos preprogramados y reacondicionados que cuentan con total garantía y confianza por parte de Cybertec.
+                        
+            </p>
+          </div>
+      </div>
+    </div>
+    <div id="footer" class="row">
+      <div id="logo" class="col-8 col-sm-2">
+        <img src="IMG/LogoCybertec.png" alt="Logo" class=""/>
+        <div>
+        <i class="fab fa-facebook-square rrss"></i>
+        <i class="fab fa-twitter-square rrss"></i>
+        </div>
+      </div>
+
+      <div id="portugal" class="col-8 col-sm-2">
+        <p>
+          Rua Dr. Sousa Martins, 19. 2725-079 <br />
+          Algueirao-Men Martins, Portugal
+        </p>
+        <a href="tel:+351962209823">+351 962209823</a>
+      </div>
+
+      <div id="espana" class=" col-8 col-sm-2">
+        <p>
+          Atención en España: <br />
+          Rubí, Barcelona
+        </p>
+        <a href="tel:+34600217690">+34 600217690</a>
+      </div>
+      <div id="email" class="col-8">
+        <a href="info@cybertec.com">· Email: info@cybertec.com ·</a>
+      </div>
+    </div>
+    <script>
+      $(function () {
+          //Captura del even para mostrar u ocultar
+          var anchura = $(window).width();
+          if (anchura > 576) {
+              $(".menu_item").show();
+
+
+          } else if (anchura < 576) {
+              $(".menu_item").hide();
+          }
+
+          $(".icon").click(function () {
+              $(".menu_item").toggle();
+              $("#logocabecera").toggle();
+          });
+
+          $(window).resize(function () {
+              var anchura = $(this).width();
+              if (anchura > 576) {
+                  $(".menu_item").show();
+
+
+              } else if (anchura < 576) {
+                  $(".menu_item").hide();
+              }
+          });
+      });
+  </script>
+  </body>
+</html>

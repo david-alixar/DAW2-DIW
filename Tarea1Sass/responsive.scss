@@ -1,0 +1,89 @@
+//// @access public
+//// @author David Gonzalez
+
+/*      TAMAÑOS PANTALLA   */
+///   Responsividad para Tablet
+/// @group tablet
+@media only screen and (min-width: 576px) {
+  .icon {
+    display: none;
+  }
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: $anch-100;
+  }
+  p {
+    font-size: $tamanoletratablet;
+  }
+  .slideshow-container {
+    width: 60%;
+  }
+
+  #servicioTecnico {
+    align-items: center;
+    img {
+      height: 75px;
+      padding-right: $padd-medio;
+    }
+    p {
+      font-size: $tamanoletratablet;
+    }
+  }
+  .card {
+    width: 70%;
+    p {
+      font-size: 1.5vw;
+    }
+    h3 {
+      font-size: $tamanoletratablet;
+    }
+    a {
+      font-size: $tamanoletratablet;
+    }
+  }
+  #servicios {
+    justify-content: space-around;
+    .card {
+      width: $anch-100;
+    }
+    a {
+      font-size: $tamanoletratablet;
+    }
+  }
+}
+
+///     Responsividad para PC
+/// @group pc
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 1.5vw;
+  }
+  #ultimasReparaciones {
+    padding-top: 0;
+    .card {
+      width: 100%;
+    }
+  }
+  #principal {
+    justify-content: space-around;
+  }
+
+  #servicioTecnico {
+    padding-bottom: 40rem;
+    img {
+      height: 60px;
+      padding-right: $padd-medio;
+    }
+    p {
+      font-size: 1.5vw;
+    }
+  }
+  .slideshow-container {
+    width: 90%;
+  }
+  .textos {
+    height: 1000px;
+  }
+}

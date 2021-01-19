@@ -1,0 +1,36 @@
+//// @access public
+//// @author David Gonzalez
+
+/// @group formulario
+/*     ESTILOS FORMULARIOS   */
+#form {
+  input[type="text"],
+  select {
+    width: $anch-100;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: $anch-100;
+    background-color: $color-empresa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $fondoFormularios;
+  }
+
+  div {
+    background-color: $fondoDivFormularios;
+    padding: 20px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+}

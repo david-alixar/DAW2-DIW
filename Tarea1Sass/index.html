@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Cybertec</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <div id="header">
+      <div id="parteSuperior">
+        <div id="logocabecera">
+          <a href="index.html">
+            <img src="IMG/LogoCybertec.png" alt="Logo" />
+          </a>
+        </div>
+
+        <div id="menu">
+          <a href="Servicios.html" class="btn menu_item ">Servicios</a>
+          <a href="Nosotros.html" class="btn menu_item">Nosotros</a>
+          <a href="Contacto.html" class="btn menu_item">Contacto</a>          
+        </div>
+
+        <div id="logomenu">
+          <span class="icon">
+          <i class="fa fa-bars"></i>
+          </span>
+        </div>
+      </div>
+
+      <div id="titulo">
+        <h1>
+          Centro de diagnóstico, <br />
+          reparación y mantenimiento
+        </h1>
+      </div>
+    </div>
+
+    <div id="principal" class="contPrincipal row">
+      <div class="row col-8 col-lg-4">
+        <div id="presentacion col-8">
+          <h2>Presentación</h2>
+          <p>
+            Somos una empresa dedicada a la reparación a nivel componentes de equipos electrónicos y electromecánicos. Nuestro principal objetivo es mantener funcionando los equipos de nuestros clientes, ya sean particulares, empresas y/o organizaciones públicas o privadas.
+          </p>
+          <!--carrusel-->
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="IMG/foto4.jpg" class="img-carru" >
+              <div class="text">Actuadores</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="IMG/foto5.jpg" class="img-carru" >
+              <div class="text">Motores</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="IMG/foto6.jpg" class="img-carru" >
+              <div class="text">Elevadores</div>
+            </div>
+          
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+
+        </div>
+
+        <div id="servicioTecnico" class="contPrincipal row col-8">
+          <h2 class="col-8">Servicio Técnico Autorizado</h2>
+          <img src="IMG/linak.jpg" alt="Logo" class="col-8 col-sm-3"/>
+          <p class="col-8 col-sm-5 ">
+            Somos servicio técnico autorizado LINAK, y disponemos de los recambios originales de la marca para las reparaciones. 
+            Disponemos de una gran variedad de productos de la marca y podemos suministrar directamente de fabrica bajo pedido.
+          </p>
+        </div>
+      </div>
+      <div id="ultimasReparaciones" class="contPrincipal col-8 col-lg-3">
+        <h2>Últimas reparaciones</h2>
+        <!--cards 3-->
+        <div>
+          <div id="actuador" class="card col-8">
+            <img src="IMG/foto1.jpg" alt="Actuador" />
+            <div class="texto">
+              <p>
+                Fuente de alimentación 24V 330W DE Quirófano PCB 3BC63506/14.
+              </p>
+              <div class="row">
+                <h3 class="col-3">Actuador</h3>
+                <a href="Servicios.html#reparacion" class="col-3">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="elevador" class="card col-8">
+            <img src="IMG/foto2.jpg" alt="Elevador" />
+            <div class="texto">
+              <p>
+                Fuente y caja de control ilcoPower DP aplicación médica.
+              </p>
+              <div class="row">
+                <h3 class="col-3">Elevador</h3>
+                <a href="Servicios.html#reparacion" class="col-3">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="mando" class="card col-8">
+            <img src="IMG/foto3.jpg" alt="Mando" />
+            <div class="texto">
+              <p>
+                Autoclave esterilizador digital de 16 litros portátil con sistema de control por microprocesador.
+              </p>
+              <div class="row">
+                <h3 class="col-3">Mando</h3>
+                <a href="Servicios.html#reparacion" class="col-3">Leer más</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="servicios" class="contPrincipal row">
+      <h2 class="col-sm-8">Servicios</h2>
+      <div id="diagnostico" class="col-8 col-sm-2">
+        <!--card-->
+        <div id="diagnostico" class="card">
+          <img src="IMG/foto3.jpg" alt="Diagnóstico" />
+          <div class="texto">
+            <a href="Servicios.html#serviciosCards">Diagnóstico</a>
+          </div>
+        </div>
+      </div>
+      <div id="reparacion" class="col-8 col-sm-2">
+        <!--card-->
+        <div id="reparacion" class="card">
+          <img src="IMG/foto2.jpg" alt="Reparación" />
+          <div class="texto">
+            <a href="Servicios.html#reparacion">Reparación</a>
+          </div>
+        </div>
+      </div>
+      <div id="mantenimiento" class="col-8 col-sm-2">
+        <!--card-->
+        <div id="mantenimiento" class="card">
+          <img src="IMG/foto1.jpg" alt="Mantenimiento" />
+          <div class="texto">
+            <a href="Servicios.html#mantenimiento">Mantenimiento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="row">
+      <div id="logo" class="col-8 col-sm-2">
+        <img src="IMG/LogoCybertec.png" alt="Logo" class=""/>
+        <div>
+        <i class="fab fa-facebook-square rrss"></i>
+        <i class="fab fa-twitter-square rrss"></i>
+        </div>
+      </div>
+
+      <div id="portugal" class="col-8 col-sm-2">
+        <p>
+          Rua Dr. Sousa Martins, 19. 2725-079 <br />
+          Algueirao-Men Martins, Portugal
+        </p>
+        <a href="tel:+351962209823">+351 962209823</a>
+      </div>
+
+      <div id="espana" class=" col-8 col-sm-2">
+        <p>
+          Atención en España: <br />
+          Rubí, Barcelona
+        </p>
+        <a href="tel:+34600217690">+34 600217690</a>
+      </div>
+      <div id="email" class="col-8">
+        <a href="info@cybertec.com">· Email: info@cybertec.com ·</a>
+      </div>
+    </div>
+    <script>
+      $(function () {
+          //Captura del even para mostrar u ocultar
+          var anchura = $(window).width();
+          if (anchura > 576) {
+              $(".menu_item").show();
+
+
+          } else if (anchura < 576) {
+              $(".menu_item").hide();
+          }
+
+          $(".icon").click(function () {
+              $(".menu_item").toggle();
+              $("#logocabecera").toggle();
+          });
+
+          $(window).resize(function () {
+              var anchura = $(this).width();
+              if (anchura > 576) {
+                  $(".menu_item").show();
+
+
+              } else if (anchura < 576) {
+                  $(".menu_item").hide();
+              }
+          });
+      });
+  </script>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  //Cambio de imagen en el carrusel
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+  }
+  </script>
+  </body>
+</html>

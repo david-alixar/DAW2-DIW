@@ -1,0 +1,35 @@
+//// @access public
+//// @author David Gonzalez
+
+//  MIXINS CREADOS PARA DIVERSOS COMPORTAMIENTOS
+/// @group mixins
+
+/// Da un padding general
+/// @group padding
+/// @parameter {float} $padd ---> cantidad de padding
+@mixin padding($padd) {
+  padding: #{$padd};
+}
+
+/// Posiciona elemento en el centro de la página
+/// @group mixins
+@mixin centrado() {
+  margin: 0 auto;
+}
+
+/// Estilos al elemento principal y la fila de la maquetación
+/// @group mixins
+@mixin flex_mixin {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+///          MIXINS PARA LAS LETRAS
+
+/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter {letra} $letra --> Letra para sustituir
+@mixin tipo_letra($letra) {
+  font-family: $letra;
+}

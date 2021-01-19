@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caramel et Chocolat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+      .boton {
+        background-color:rgb(190, 168, 41);
+        border: rgb(190, 168, 41);
+        color: white;
+      }
+      .letramorada {
+        color: rgb(131, 42, 97);
+      }
+      .fondo {
+        background-image: url('./IMG/fondo nombre.jpg'); 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        background-size: cover;
+      }
+      .fotos {
+        width: 282px;
+        height: 190px;
+      }
+      .testimonios {
+        max-width: 100% !important;
+      }
+      .toast:not(:last-child){
+        margin-bottom: 0;
+      }
+      ul{
+        list-style: none;
+      }
+    </style>
+</head>
+<body>
+ 
+  <div class="container-fluid">
+    
+     <!-- COOKIES-->
+    <div class="alert alert-warning alert-dismissible fade show fixed-bottom p-5">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Cookies!</strong> Acepta las benditas cookies o cierra el mensaje.
+      <button type="button" class="btn btn-link" data-dismiss="alert" data-bs-toggle="tooltip" title="No te leerás la parrafada y lo sabes"> Acepto</button>
+    </div>
+
+    <!-- HEADER -->
+    <div class="row sticky-top">
+      <div class="col-12 p-0">
+        <nav class="navbar navbar-expand-sm  navbar-light bg-white">
+          <a class="navbar-brand col-6 col-sm-4 px-0 mr-0" href="#">
+            <img src="./IMG/Caramel et Chocolat.png" class="img-fluid" />
+          </a>
+              
+        <!-- MENU -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right justify-content-end" id="navbarTogglerDemo01"> 
+          <ul class="navbar-nav mr-0 mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link px-sm-2" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1 px-md-3" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1 px-md-3" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1 px-md-3" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1 px-md-3" href="#carta">Carta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-1 px-md-3" href="#pedido" data-toggle="modal" data-target="#ventanaPedido">Pedido</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      </div>
+    </div>
+                           
+   <!-- PRESENTACIÓN -->
+    <div class="row jumbotron" style="background-image: url('./IMG/fondo nombre.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+      <div class="col-12 py-5 text-center align-baseline">
+        <div class="">
+          <h1 class="display-3 font-italic letramorada">Tus momentos más dulces</h1>
+          <h6 class="py-5"><strong><em>Caramel et Chocolat</em></strong></h6>
+          <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn boton" id="botonpedido" data-toggle="modal" data-target="#ventanaPedido">Haz tu pedido</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBRE NOSOTROS -->
+    <div class="row text-center" id="nosotros">
+      <div class="col-12 ">
+        <hr class="border border-warning col-1 mt-5">
+        <h2 class="letramorada">Nosotros</h2>
+      </div>
+      <div class="p-5">
+        <h3 class="pb-3 font-italic">Cafetería y pastelería con obrador propio</h3>
+        <p class="text-secondary">
+          Pastelería francesa hecha a diario en nuestro propio obrador con ingredientes naturales. Desayunos con pan confeccionado y horneado a diario en nuestros hornos, zumo de naranja natural recién exprimido, café, más de 15 variedades de tés e infusiones, y para las meriendas... ¡crêpes recién hechas! <br>        Todo esto en el mejor ambiente para que disfrutes de nuestros productos compartiendo con los tuyos tus momentos más dulces <br>
+          No te olvides de dejar tu valoración y comentario. Es muy importante para nosotros. <br>
+          Muchas gracias y esperamos compartir contigo todos esos grandes momentos. 
+        </p>
+      </div>
+    </div>
+    
+    <!-- UBICACIÓN Y HORARIO -->
+    <div class="row text-center" id="contacto">
+      <div class="col-12">
+        <hr class="border border-warning col-1 mt-5">
+        <h2 class="letramorada">Contacto</h2>
+      </div>
+      <div class="row p-5 mx-auto justify-content-between no-gutters">
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.37809126319!2d-6.124451184693675!3d37.38088987983312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd121390eb4e3fab%3A0x4c63e7681c5f62ee!2sCaramel%20et%20Chocolat!5e0!3m2!1ses!2ses!4v1606596096525!5m2!1ses!2ses" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div> 
+        <div class="row col-12 col-lg-6 no-gutters">
+          <div class="col-12 col-sm-6">
+            <h3 class="pb-3 font-italic">Dirección</h3>
+            <p class="text-secondary">
+              C/ Padre Claudio Lopez, 14 <br>
+              41807 Espartinas <br>
+              Sevilla, España
+            </p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h3 class="pb-3 font-italic">Horario</h3>
+            <p class="text-secondary">
+              Lun: cerrado <br>
+              Mar: 8:30-12:30 <br>
+              Mié-Dom: 8:30-12:30 y 16:30-20:00
+            </p>
+          </div>
+          <div class="row col-12 no-gutters">
+            <div class="col-12">
+              <h3 class="pb-3 font-italic">Datos de contacto</h3>
+              <p class="text-secondary">
+                Teléfono: +34 605 80 69 28 <br>
+                Correo: info@carameletchocolate.es
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOVEDADES -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr class="border border-warning col-1 mt-5">
+        <h2 class="letramorada">Novedades</h2>
+      </div>
+
+      <div class="row justify-content-around">
+        <div class="card col-lg-5 m-4 p-0">
+          <div class="card-header">
+            Actualización de nuestros horarios
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p class="fs-6 fw-light">Actualizamos nuestro horario de las tardes!
+                de 16:30 a 18:00h como de costumbre tendremos nuestro servicio de cafetería y pastelería habitual
+                de 18:00 a 20:00h... TAKE AWAY! toda nuestra pastelería, bollería y crepes recién hechas preparadas para ti al momento para llevarte a casa y poder seguir goloseando!! También café e infusiones para llevar!!! Aceptamos encargos telefónicos para recoger en local, o sobre la marcha pidenos lo que quieras!</p>
+              <footer class="blockquote-footer">Info <cite title="Source Title">Caramel et Chocolat</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="card col-lg-5 m-4 p-0">
+          <div class="card-header">
+            Nuestros productos
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p class="fs-6 fw-light">Hay cosas que no cambian!
+                En Caramel Et Chocolat volvemos con nuestro pan de siempre recién hecho en nuestro obrador para vuestros desayunos!
+                #CaramelEtChocolatEspartinas #desayunossaludables #tusmejoresmomentos #pancasero #obrador #Espartinas</p>
+              <footer class="blockquote-footer">Panadería <cite title="Source Title">Caramel et Chocolat</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- TESTIMONIOS -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr class="border border-warning col-1 mt-5">
+        <h2 class="letramorada">Testimonios</h2>
+      </div>
+      
+      <div class="row m-4 justify-content-around">
+        <div class="toast testimonios col-4 mb-2" data-autohide="false">
+          <div class="toast-header">
+            <strong class="mr-auto text-primary">Mercedes G</strong>
+            <small class="text-muted">Hace una semana</small>
+          </div>
+          <div class="toast-body">
+            Mi cafetería preferida La calidad de todos los productos y el servicio es excelente, el ambiente que crean Maria y Antonio es buenísimo. El conjunto hace la cafetería muy acogedora. Deseando volver
+          </div>
+        </div> 
+        <div class="toast testimonios col-4 mb-2" data-autohide="false">
+          <div class="toast-header">
+            <strong class="mr-auto text-primary">Francisco J</strong>
+            <small class="text-muted">Hace tres semanas</small>
+          </div>
+          <div class="toast-body">
+            Un sitio agradable con el servicio muy correcto y con productos de calidad soy de fuera y me ha encantado el trato y su buen gusto en todo los detalles lo recomiendo
+          </div>
+        </div>
+        <div class="toast testimonios col-4 mb-2" data-autohide="false">
+          <div class="toast-header">
+            <strong class="mr-auto text-primary">Jose R</strong>
+            <small class="text-muted">Hace un mes</small>
+          </div>
+          <div class="toast-body">
+            Decisión improvisada, gracias a vuestros comentarios, y ha sido una elección espectacular para una merienda exquisita. Volveremos
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALERÍA -->
+    <div class="row" id="galeria">
+      <div class="col-12 text-center">
+        <hr class="border border-warning col-1 mt-5">
+        <h2 class="letramorada">Galería</h2>
+      </div>
+      <div class="row p-5 mx-auto justify-content-around">
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/milhojas.jpg" class="card-img-top fotos w-100" alt="Milhojas" data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Fina y crujiente masa de hojaldre artesanal, buttercream de chocolate negro y chocolate blanco, consistente nata montada y, para decorar, topping de frutos rojos">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Milhojas Bifásico</h5>
+            <p class="card-text text-secondary">Exquisito milhojas hecho en nuestro obrador</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/brownie.jpg" class="card-img-top fotos w-100" alt="Brownie"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Esponjoso bizcocho de chocolate relleno de frutos secos (nueces, almendras, avellanas, pasas, cacahuetes, orejones y dátiles) y pequeños regalos de chocolate que se derriten al morder">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Brownie Foncé</h5>
+            <p class="card-text text-secondary">Delicioso brownie de chocolate y frutos secos</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/napolitanas-chocolate.png" class="card-img-top fotos w-100" alt="Napolitana"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Finlisima y crujiente masa de hojaldre artesanal recién horneada, que envuelve una lengua de chocolate con leche, decorada con lluvia de chocolate">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Napolitana Chocolat</h5>
+            <p class="card-text text-secondary">Crujiente napolitana de chocolate 100% artesanal</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/croissants.jpg" class="card-img-top fotos w-100" alt="Croissants"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Finlisima y crujiente rollo de masa de hojaldre artesanal recién horneado con exquisito y abundante relleno de chocolate fundido y trozos de Ferrero Roche">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Croissant Chocolat</h5>
+            <p class="card-text text-secondary">Crujiente croissant de chocolate 100% artesanal</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/tartaleta.jpg" class="card-img-top fotos w-100" alt="Tartaleta"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Riquísima base de galletas artesanales de mantequilla que recoge una deliciosa crema pastelera, coronada por un surtido de frutas frescas, cubierta por una dulce gelatina de almíbar">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Tartaleta Frutal</h5>
+            <p class="card-text text-secondary">Bocados de fruta que encienden todos los sentidos</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/tarta-tres-chocolates.jpg" class="card-img-top fotos w-100" alt="Tarta"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Trifásico de bizcocho de chocolate negro, con leche y blanco, unidos entre ellos por una suave buttercream y coronado con frutos silvestres">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Tentación de Chocolate</h5>
+            <p class="card-text text-secondary">Grandiosa tarta de tres chocolates: negro, con leche y blanco</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/Tostada Jamón-Ibérico.jpg" class="card-img-top fotos w-100" alt="Tostada"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Tostada de pan de masa madre horneado diariamente y cortado con el grosor perfecto sin quitarle al velo de jamón ibérico de bellota al corte que cubre una pincelada de tomate triturado de Los Palacios y gotas de aceite de oliva virgen extra">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Tostada Ibérica</h5>
+            <p class="card-text text-secondary">Tostada de jamón ibérico de bellota con tomate triturado y aceite de oliva virgen extra</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/empanadillas-de-bonito.JPG" class="card-img-top fotos w-100" alt="Empanadilla"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Deliciosa masa de hojaldre crujiente horneada que envuelve un exquisito guiso de atún de Cádiz sobrito con variedad de verduras locales en aceite de oliva virgen extra">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Empanadillas de Mar</h5>
+            <p class="card-text text-secondary">Empanadillas horneadas que se deshacen en la boca para dar paso a su delicioso relleno de atún</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/sandwich.jpg" class="card-img-top fotos w-100" alt="Sandwich"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Sandwich tricapa hecho con pan de molde artesanal, relleno de lechuga fresca, velo de tomate de Los Palacios, cuartos de huevo de codorniz, lonchas de queso gouda, lonchas de jamón de pavo, y fina mayonesa en cada capa">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Royal Sandwich</h5>
+            <p class="card-text text-secondary">Bocadillo tricapa con mezcla vegetal, huevo, queso, jamón de pavo y fina mayonesa</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/yogur.jpg" class="card-img-top fotos w-100" alt="Yogur"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Dulce yogur natural artesanal de stracciatella con frutos rojos confitados y coronado por frutos rojos secos y rociado por un fino hilo de leche condensada">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Deligur</h5>
+            <p class="card-text text-secondary">Exquisito yogur de stracciatella con frutos rojos</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/batidos.jpg" class="card-img-top fotos w-100" alt="Batidos"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Varidad de batidos hechos con base de helado de vainilla y frutas naturales y frescas licuadas con una cinta de chocolate blanco y coronados por una dulce nata montada">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Pecados Batidos</h5>
+            <p class="card-text text-secondary">Deliciosa variedad de batidos de helado y fruta</p>
+          </div>
+        </div>
+        <div class="card w-25 col-12 col-sm-6 col-lg-4 pt-3">
+          <img src="./IMG/cafe.jpg" class="card-img-top fotos w-100" alt="Café"  data-toggle="popover" data-placement="bottom" title="Ingredientes" 
+          data-content="Café artesanal con granos recién molidos de distintos orígenes con dulce y fina espuma de leche y espolvoreado con canela y chocolate negro">
+          <div class="card-body">
+            <h5 class="card-title font-italic">Café</h5>
+            <p class="card-text text-secondary">Café recién molido y siéntete en el paraíso</p>
+          </div>
+        </div>
+      </div>
+    
+      <div id="carousel" class="carousel slide col-8 offset-2 d-none d-lg-block" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
+          <li data-target="#carousel" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./IMG/foto1.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/foto2.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/foto3.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/foto4.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/foto5.jpeg" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./IMG/foto6.png" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+        
+
+    <!-- PEDIDOS -->
+    <div class="row" id="pedido">
+      <div class="modal fade" id="ventanaPedido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-warning bg-dark p-2" role="document">
+          <!--Content-->
+          <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header text-center">
+              <img src="./IMG/Caramel et Chocolat.png" class="img-fluid w-50">
+              <h4 class="modal-title w-100 font-weight-bold py-2">Pedidos</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--Body-->
+            <div class="row modal-body m-3">
+              <form class="row row-cols-lg-auto g-3 align-items-center">               
+                  <div class="col-md-5 m-3">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" required placeholder="Nombre">            
+                  </div>
+                  <div class="col-md-5 m-3">
+                    <label for="validationCustom02" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02"  required placeholder="Apellidos">                
+                  </div>
+                  <div class="col-md-10 m-2">
+                    <label for="validationCustom03" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="validationCustom02"  required placeholder="+34000000000">                
+                  </div>
+                  <div class="col-md-10 m-2">
+                    <label for="validationCustomEmail" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      <input type="text" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" required placeholder="ejemplo@ejemplo.com">        
+                    </div>
+                  </div>            
+                  <div class="col-md-10 m-5">
+                    <label class="form-label">Productos</label>
+                    <select class="form-select" aria-label="Tipo de pedido">
+                      <option selected>Seleccione qué desea encargar</option>
+                      <option value="1">Tarta</option>
+                      <option value="2">Cátering salado</option>
+                      <option value="3">Cátering dulce</option>
+                      <option value="4">Varios</option>
+                    </select>
+                  </div>
+                  <div class="row input-group col-md-12 justify-content-center">
+                    <label class="form-label col-12">Seleccione la imagen que quiera en la tarta</label>
+                    <input type="file" class="form-control col-9" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <button class="btn btn-outline-secondary col-2" type="button" id="inputGroupFileAddon04">Subir</button>
+                  </div>
+                  <div class="col-md-10 mt-3">
+                    <label for="exampleColorInput" class="form-label">Escoja el color de decoración y envoltorio</label>
+                    <input type="color" class="form-control form-control-color col-md-3" id="exampleColorInput" value="#f1c7ef" title="Escoja su color">
+                    <div class="row m-2">
+                      <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="envoltorio" id="envoltorio1" value="option1" checked>
+                        <label class="form-check-label" for="envoltorio1">Caja</label>
+                      </div>
+                      <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="envoltorio" id="envoltorio2" value="option2">
+                        <label class="form-check-label" for="envoltorio2">Bandeja</label>
+                      </div>
+                    </div>
+                  </div>
+                             
+                  <div class="custom-control custom-switch mt-4">
+                    <input type="checkbox" class="custom-control-input" id="switch1">
+                    <label class="custom-control-label" for="switch1">Entrega a domicilio</label>
+                  </div>
+                  <div class="m-3">
+                    <label for="validationCustom04" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="validationCustom04" required placeholder="Dirección de envío a domicilio">                
+                  </div>
+               
+                <div class="col-md-10 m-4">
+                  <label for="validationCustom01" class="form-label">Fecha de entrega</label>
+                  <input type="date" class="form-control" required>            
+                </div>
+                <div class="m-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Acepto las condiciones generales
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Quiero que me envíen un SMS cuando mi pedido esté completo
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>            
+            <!--Footer-->
+          
+            <div class="modal-footer justify-content-center">
+              <a type="button" onclick="enviar()" class=" close btn btn-outline-warning waves-effect" data-dismiss="modal" aria-label="Close">Enviar</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- CARTA!-->
+    <div class="row" id="carta">
+      <div class="col-12 text-center">
+        <hr class="border border-warning col-1 mt-5">
+        <h2 class="letramorada">Nuestra Carta</h2>
+        <button type="button" class="btn boton m-3" data-toggle="collapse" data-target="#mostrarCarta">Mostrar nuestra carta completa</button>
+      </div>
+      <div class="p-5 m-auto border border-warning fondo collapse" id="mostrarCarta">
+        <ul class="list-group font-weight-bold">
+          <li>BEBIDAS</li>
+          <ul>
+            <li>Bebidas calientes</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Vaso de leche</div>
+                <div>1,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Café solo</div>
+                <div>1,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Café o descafeinado con leche</div>
+                <div>1,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Café Bombón</div>
+                <div>1,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Café Capuccino</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Café Baileys</div>
+                <div>2,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Chocolate caliente</div>
+                <div>2,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Cola Cao / Nesquik</div>
+                <div>1,30 €</div>
+              </li>
+            </ul>
+            <li>Bebidas frías</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Batidos Puleva(fresa, vainilla y chocolate)</div>
+                <div>1,30 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Zumos Júver, (piña y piña)</div>
+                <div>1,30 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Zumo de naranja natural</div>
+                <div>1,80 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Bifrutas Tropical</div>
+                <div>1,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Agua mineral (500 ml)</div>
+                <div>0,70 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Agua con gas Perrier</div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Coca Cola / Fanta / Tónica Blue (270 ml)</div>
+                <div>1,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Botellín Cruzcampo</div>
+                <div>1,30 €</div>
+              </li>
+            </ul>
+          </ul>
+          <li>TÉS E INFUSIONES</li>
+          <ul>
+            <li class="row justify-content-between">
+              <div>Té negro</div>
+              <div>1,60 €</div>
+            </li>
+            <ul>
+              <li>Breakfast (combinación de tés puros)</li>
+  
+              <li>
+                Earl Grey (té negro Darjeeling de la India con aceite de
+                bergamota)
+              </li>
+              <li>
+                Pakistaní (té negro, canela, vainilla, naranja de Sevilla,
+                cardamomo)
+              </li>
+            </ul>
+            <li class="row justify-content-between">
+              <div>Té rojo</div>
+              <div>1,60 €</div>
+            </li>
+            <ul>
+              <li>Pu-erh Yunnan</li>
+              <li>
+                Tarta de manzana (té rojo Pu-erh, manzana dulce, canela, clavo,
+                manzana ácida, anís estrellado)
+              </li>
+            </ul>
+            <li class="row justify-content-between">
+              <div>Té blanco</div>
+              <div>1,60 €</div>
+            </li>
+            <ul>
+              <li>Pai-mu-tan</li>
+              <li>
+                Siempre amigos (té blanco Pai-mu-tan, té blanco Mao Feng, piña,
+                papaya, manga, grosella roja, rosas, arándanos, jazmín girasol)
+              </li>
+            </ul>
+            <li class="row justify-content-between">
+              <div>Té verde</div>
+              <div>1,60 €</div>
+            </li>
+            <ul>
+              <li>Sencha</li>
+              <li>
+                Moruno (té verde Gunpowder, menta fresca, hierbabuena de Túnez)
+              </li>
+              <li>
+                Chai (té verde Sencha, té negro Assam, cardamomo, clavo, pimienta,
+                canela, jengibre)
+              </li>
+              <li>
+                Zumo de Higos (combinación de tés verdes Chun Mee, Yi Xing, higos,
+                granadas, dátiles, arroz)
+              </li>
+            </ul>
+            <li class="row justify-content-between">
+              <div>Rooibos</div>
+              <div>1,60 €</div>
+            </li>
+            <ul>
+              <li>
+                Galletas (Rooibos Sudáfrica, vainilla, limón, clavo, rosa,
+                pimienta, canela, jengibre, cacao puro, cardamomo)
+              </li>
+            </ul>
+            <li class="row justify-content-between">
+              <div>Infusiones</div>
+              <div>1,60 €</div>
+            </li>
+            <ul>
+              <li>Manzanilla</li>
+              <li>Tila</li>
+              <li>Menta poleo</li>
+            </ul>
+          </ul>
+          <li>DESAYUNOS</li>
+          <ul>
+            <li>
+              Tostadas. Posibilidad de pan blanco, multicereales y sarraceno (Apto
+              para intolerancias al gluten)
+            </li>
+            <ul>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Tostada</div>
+                  <div class="col">Media</div>
+                </div>
+                <div>Entera</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Aceite</div>
+                  <div class="col">0,60 €</div>
+                </div>
+                <div>1,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Aceite y tomate</div>
+                  <div class="col">0,80 €</div>
+                </div>
+                <div>1,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Mantequilla</div>
+                  <div class="col">0,70 €</div>
+                </div>
+                <div>1,10 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Mantequilla y mermelada</div>
+                  <div class="col">0,90 €</div>
+                </div>
+                <div>1,30 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Philadelphia</div>
+                  <div class="col">0,90 €</div>
+                </div>
+                <div>1,30 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Philadelphia y mermelada</div>
+                  <div class="col">1,10 €</div>
+                </div>
+                <div>1,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Nutella</div>
+                  <div class="col">1,10 €</div>
+                </div>
+                <div>1,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Paté y mermelada</div>
+                  <div class="col">1,30 €</div>
+                </div>
+                <div>1,80 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Jamón york/pavo</div>
+                  <div class="col">1,60 €</div>
+                </div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Jamón york/pavo y tomate</div>
+                  <div class="col">1,70 €</div>
+                </div>
+                <div>2,10 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Jamón york/pavo y Philadelphia</div>
+                  <div class="col">1,80 €</div>
+                </div>
+                <div>2,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Jamón Ibérico</div>
+                  <div class="col">2,50 €</div>
+                </div>
+                <div>3,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div class="row col justify-content-between">
+                  <div class="col">Jamón Ibérico y tomate</div>
+                  <div class="col">2,60 €</div>
+                </div>
+                <div>3,10 €</div>
+              </li>
+            </ul>
+            <li>Bollería</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Croissant</div>
+                <div>1,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con mantequilla</div>
+                <div>1,40 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con mantequilla y mermelada</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con Philadelphia y mermelada</div>
+                <div>1,90 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con nutella</div>
+                <div>1,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con quso Havarti</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con jamón York/pavo</div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Croissasnt con jamón ibérico</div>
+                <div>3,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Pan au chocolat</div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Pan au raisin</div>
+                <div>1,30 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Chausson aux pommes</div>
+                <div>1,40 €</div>
+              </li>
+            </ul>
+          </ul>
+          <li>MERIENDAS</li>
+          <ul>
+            <li>Pasteles en porciones</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Tartaleta de chocolate</div>
+                <div>1,70 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Tarta de manzana</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Brownie</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Brownie vegano</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Sultana</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Ópera</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Piñones</div>
+                <div>1,70 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Hojaldre de frutas</div>
+                <div>1,70 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Tartaleta de almendras</div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Tartaleta de limón y merengue</div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Mousse de chocolate</div>
+                <div>1,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Queso de mora</div>
+                <div>1,80 €</div>
+              </li>
+            </ul>
+            <li>Merengues</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Natural</div>
+                <div>0,60 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Fresa</div>
+                <div>0,60 €</div>
+              </li>
+            </ul>
+            <li>Galletas</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Cookies</div>
+                <div>1,00 €</div>
+              </li>
+            </ul>
+            <li>Crepes</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Azúcar</div>
+                <div>2,00 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Mermelada</div>
+                <div>2,20 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Nutella</div>
+                <div>2,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Dulce de leche</div>
+                <div>2,50 €</div>
+              </li>
+            </ul>
+            <li>Tartas (por encargo)</li>
+            <ul>
+              <li class="row justify-content-between">
+                <div>Manzana</div>
+                <div>15 €/Kg</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Mousse de caramelo o chocolate</div>
+                <div>15 €/Kg</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Hojaldre de frutas</div>
+                <div>16 €/Kg</div>
+              </li>
+              <li>Tartaleta de chocolate</li>
+              <ul>
+                <li class="row justify-content-between">
+                  <div>1 Kg (peso aprox)</div>
+                  <div>16 €</div>
+                </li>
+                <li class="row justify-content-between">
+                  <div>2 Kg (peso aprox)</div>
+                  <div>28 €</div>
+                </li>
+              </ul>
+              <li class="row justify-content-between">
+                <div>Tiramisú</div>
+                <div>17 €/Kg</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Piñones</div>
+                <div>20 €/Kg</div>
+              </li>
+              <li>Tartaleta de limón y merengue</li>
+              <ul>
+                <li class="row justify-content-between">
+                  <div>1 Kg (peso aprox)</div>
+                  <div>20 €</div>
+                </li>
+                <li class="row justify-content-between">
+                  <div>2 Kg (peso aprox)</div>
+                  <div>35 €</div>
+                </li>
+              </ul>
+            </ul>
+          </ul>
+          <li>
+            LICORES
+            <ul>
+              <li class="row justify-content-between">
+                <div>Pacharán Zoco</div>
+                <div>2,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Baileys</div>
+                <div>3,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Miura</div>
+                <div>3,50 €</div>
+              </li>
+              <li class="row justify-content-between">
+                <div>Chupito de anís dulce Castellana</div>
+                <div>2,50 €</div>
+              </li>
+            </ul>
+          </li>
+          <li>COMBINADOS</li>
+          <ul>
+            <li class="row justify-content-between">
+              <div>Ginebra Beefeater</div>
+              <div>4,00 €</div>
+            </li>
+            <li class="row justify-content-between">
+              <div>Ron Barceló añejo superior</div>
+              <div>4,00 €</div>
+            </li>
+            <li class="row justify-content-between">
+              <div>Ron Brugal</div>
+              <div>4,00 €</div>
+            </li>
+            <li class="row justify-content-between">
+              <div>Ron Legendario Elixir</div>
+              <div>4,00 €</div>
+            </li>
+            <li class="row justify-content-between">
+              <div>Whisky White Label</div>
+              <div>4,00 €</div>
+            </li>
+            <li class="row justify-content-between">
+              <div>Whisky Johnnie Walker E/Roja</div>
+              <div>4,00 €</div>
+            </li>
+            <li class="row justify-content-between">
+              <div>Whisky Four Roses</div>
+              <div>4,00 €</div>
+            </li>
+          </ul>
+        </ul>
+        <div class="row justify-content-around mt-3">
+          <img src="./IMG/gluten.png" class="img-fluid w-25 col-1" />
+          <img src="./IMG/lacteos.png" class="img-fluid w-25 col-1" />
+          <img src="./IMG/huevos.png" class="img-fluid w-25 col-1" />
+          <img src="./IMG/frutossecos.png" class="img-fluid w-25 col-1" />
+        </div> 
+      </div>
+    </div>
+  </div>      
+    <!-- FOOTER  tlf , rrss, email, dirección, copyright-->
+    <div class="fondo mt-5">
+      <div class="row justify-content-center p-1" >
+        <div class="col-12 w-100">
+          <h2 class="text-center letramorada">
+            Contacto
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center p-3">
+        <div class="col-2 col-md-1">
+            <a href="tel:+34 605 80 69 28" target="_blank" tabindex="-1" role="button" aria-disabled="true"><img src="./IMG/telefono.png" class="img-fluid w-50" /></a>
+        </div>
+        <div class="col-2 col-md-1">
+          <a href="https://www.facebook.com" target="_blank" tabindex="-1" role="button" aria-disabled="true"><img src="./IMG/fb.png" class="img-fluid w-50" role="button" /></a>
+        </div>
+        <div class="col-2 col-md-1">
+          <a href="https://www.instagram.com" target="_blank" tabindex="-1" role="button" aria-disabled="true"><img src="./IMG/insta.png" class="img-fluid w-50" /></a>
+        </div>
+      </div>
+    </div>
+  
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+ 
+ <script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+  });
+  </script>
+
+  <script>
+   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+  <script>
+    function enviar() {
+      alert("Pedido registrado")
+    }
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('.toast').toast('show');
+  });
+  </script>
+
+</body>
+</html>

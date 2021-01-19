@@ -1,0 +1,38 @@
+//// @access public
+//// @author David Gonzalez
+
+/*DISEÑO DE LA PÁGINA   */
+
+/// @group diseño
+
+///Tamaño y borde de las row
+.row {
+  @include flex_mixin;
+}
+
+/// Generar columnas responsivas
+/// @group diseño
+@for $i from 1 through 8 {
+  .row > .col-#{$i} {
+    width: #{anchura_col($i)};
+  }
+}
+
+/// Bucle para generar las clases de las columnas responsivas
+/// @group diseño
+/// tablet
+@media screen and (min-width: 576px) {
+  @for $i from 1 through 8 {
+    .row > .col-sm-#{$i} {
+      width: #{anchura_col($i)};
+    }
+  }
+}
+/// pc
+@media screen and (min-width: 992px) {
+  @for $i from 1 through 8 {
+    .row > .col-lg-#{$i} {
+      width: #{anchura_col($i)};
+    }
+  }
+}

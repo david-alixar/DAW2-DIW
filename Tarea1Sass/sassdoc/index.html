@@ -1,0 +1,469 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Tarea1sass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Tarea1sass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Tarea Sass</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Tarea1sass - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="cards"><a href="#cards">cards</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="cards-css"><a href="#cards-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="cards" data-name=".card" data-type="css"><a href="#cards-css-.card">.card</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="cards-variable"><a href="#cards-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="cards" data-name="altura-cards" data-type="variable"><a href="#cards-variable-altura-cards">altura-cards</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="carrusel"><a href="#carrusel">carrusel</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="carrusel-css"><a href="#carrusel-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="carrusel" data-name="*" data-type="css"><a href="#carrusel-css-*">*</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-empresa" data-type="variable"><a href="#colores-variable-color-empresa">color-empresa</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="contacto"><a href="#contacto">contacto</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="contacto-css"><a href="#contacto-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="contacto" data-name=".contPrincipal" data-type="css"><a href="#contacto-css-.contPrincipal">.contPrincipal</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="diseño"><a href="#diseño">diseño</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="diseño-css"><a href="#diseño-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="diseño" data-name="///Tamaño y borde de las row
+.row" data-type="css"><a href="#diseño-css-///Tamaño y borde de las row
+.row">///Tamaño y borde de las row .row</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="diseño-function"><a href="#diseño-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="diseño" data-name="anchura_col" data-type="function"><a href="#diseño-function-anchura_col">anchura_col</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="estilos"><a href="#estilos">estilos</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="estilos-css"><a href="#estilos-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="estilos" data-name="/*      Estilos generales   */
+/// Parte princial
+#principal" data-type="css"><a href="#estilos-css-/*      Estilos generales   */
+/// Parte princial
+#principal">/* Estilos generales */ /// Parte princial #principal</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="footer"><a href="#footer">footer</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="footer-css"><a href="#footer-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="footer" data-name="/*      FOOTER  */
+#footer" data-type="css"><a href="#footer-css-/*      FOOTER  */
+#footer">/* FOOTER */ #footer</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="formulario"><a href="#formulario">formulario</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="formulario-css"><a href="#formulario-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="formulario" data-name="/*     ESTILOS FORMULARIOS   */
+#form" data-type="css"><a href="#formulario-css-/*     ESTILOS FORMULARIOS   */
+#form">/* ESTILOS FORMULARIOS */ #form</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="formularios"><a href="#formularios">formularios</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="formularios-variable"><a href="#formularios-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="formularios" data-name="fondoFormularios" data-type="variable"><a href="#formularios-variable-fondoFormularios">fondoFormularios</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="fuentes"><a href="#fuentes">fuentes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="fuentes-variable"><a href="#fuentes-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="fuentes" data-name="tipoletra" data-type="variable"><a href="#fuentes-variable-tipoletra">tipoletra</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="header"><a href="#header">header</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="header-css"><a href="#header-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="header" data-name="/*     HEADER   */
+
+#header" data-type="css"><a href="#header-css-/*     HEADER   */
+
+#header">/* HEADER */ #header</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="header-variable"><a href="#header-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="header" data-name="logocabecera-alt" data-type="variable"><a href="#header-variable-logocabecera-alt">logocabecera-alt</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="letra"><a href="#letra">letra</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="letra-mixin"><a href="#letra-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="letra" data-name="tipo_letra" data-type="mixin"><a href="#letra-mixin-tipo_letra">tipo_letra</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="mixins"><a href="#mixins">mixins</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="mixins-css"><a href="#mixins-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="/// Da un padding general
+/// @group padding
+/// @parameter" data-type="css"><a href="#mixins-css-/// Da un padding general
+/// @group padding
+/// @parameter">/// Da un padding general /// @group padding /// @parameter</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="mixins-mixin"><a href="#mixins-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="centrado" data-type="mixin"><a href="#mixins-mixin-centrado">centrado</a></li><li class="sidebar__item sassdoc__item" data-group="mixins" data-name="flex_mixin" data-type="mixin"><a href="#mixins-mixin-flex_mixin">flex_mixin</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="nosotros"><a href="#nosotros">nosotros</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="nosotros-css"><a href="#nosotros-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="nosotros" data-name="#quienesSomos" data-type="css"><a href="#nosotros-css-#quienesSomos">#quienesSomos</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="padding"><a href="#padding">padding</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="padding-mixin"><a href="#padding-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="padding" data-name="padding" data-type="mixin"><a href="#padding-mixin-padding">padding</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="principal"><a href="#principal">principal</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="principal-css"><a href="#principal-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="principal" data-name=".contPrincipal" data-type="css"><a href="#principal-css-.contPrincipal">.contPrincipal</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="servicios"><a href="#servicios">servicios</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="servicios-css"><a href="#servicios-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="servicios" data-name="#servicios" data-type="css"><a href="#servicios-css-#servicios">#servicios</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="serviciotecnico"><a href="#serviciotecnico">serviciotecnico</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="serviciotecnico-css"><a href="#serviciotecnico-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="serviciotecnico" data-name="#servicioTecnico" data-type="css"><a href="#serviciotecnico-css-#servicioTecnico">#servicioTecnico</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="temas"><a href="#temas">temas</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="temas-css"><a href="#temas-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="temas" data-name="/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme" data-type="css"><a href="#temas-css-/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme">/// Variables para controlar si quiero tema oscuro o claro /// Tema claro (true para seleccionar) $light-theme: false; /// Tema oscuro (true para seleccionar) $dark-theme: true; /// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto) $fondo-menu: black; /// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro @if $light-theme</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="texto"><a href="#texto">texto</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="texto-css"><a href="#texto-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="texto" data-name=".text" data-type="css"><a href="#texto-css-.text">.text</a></li><li class="sidebar__item sassdoc__item" data-group="texto" data-name="body" data-type="css"><a href="#texto-css-body">body</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".slideshow-container" data-type="css"><a href="#undefined-css-.slideshow-container">.slideshow-container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".numbertext" data-type="css"><a href="#undefined-css-.numbertext">.numbertext</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".dot" data-type="css"><a href="#undefined-css-.dot">.dot</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".fade" data-type="css"><a href="#undefined-css-.fade">.fade</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".row" data-type="css"><a href="#undefined-css-.row">.row</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#principal" data-type="css"><a href="#undefined-css-#principal">#principal</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#logocabecera" data-type="css"><a href="#undefined-css-#logocabecera">#logocabecera</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#logomenu" data-type="css"><a href="#undefined-css-#logomenu">#logomenu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#parteSuperior" data-type="css"><a href="#undefined-css-#parteSuperior">#parteSuperior</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#menu" data-type="css"><a href="#undefined-css-#menu">#menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="#titulo" data-type="css"><a href="#undefined-css-#titulo">#titulo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter" data-type="css"><a href="#undefined-css-/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter">/// Estilos para cambiar el tipo de fuente /// @group letra /// @parameter</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="light-theme" data-type="variable"><a href="#undefined-variable-light-theme">light-theme</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="dark-theme" data-type="variable"><a href="#undefined-variable-dark-theme">dark-theme</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="fondo-menu" data-type="variable"><a href="#undefined-variable-fondo-menu">fondo-menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="anch-100" data-type="variable"><a href="#undefined-variable-anch-100">anch-100</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padd-medio" data-type="variable"><a href="#undefined-variable-padd-medio">padd-medio</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="logocabecera-anch" data-type="variable"><a href="#undefined-variable-logocabecera-anch">logocabecera-anch</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="logomenu-alt" data-type="variable"><a href="#undefined-variable-logomenu-alt">logomenu-alt</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="logomenu-anch" data-type="variable"><a href="#undefined-variable-logomenu-anch">logomenu-anch</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tamanoletratablet" data-type="variable"><a href="#undefined-variable-tamanoletratablet">tamanoletratablet</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tamanoContacto" data-type="variable"><a href="#undefined-variable-tamanoContacto">tamanoContacto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tamanoHeader" data-type="variable"><a href="#undefined-variable-tamanoHeader">tamanoHeader</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tamanoFooter" data-type="variable"><a href="#undefined-variable-tamanoFooter">tamanoFooter</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="fondoDivFormularios" data-type="variable"><a href="#undefined-variable-fondoDivFormularios">fondoDivFormularios</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="cards"><div class="container">cards</div></h1><div class="main__description"><div class="container"><p>Altura de las cards</p></div></div><section class="main__sub-section" id="cards-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="cards-css-.card"><h3 class="item__heading"><a class="item__name" href="#css-.card">.card</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 1rem;
+
+  :hover {
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: $anch-100;
+  }
+  p {
+    padding: 0.5rem;
+  }
+  a {
+    color: $color-empresa;
+    padding: 0.5rem;
+    font-size: 3vw;
+  }
+  h3 {
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 4vw;
+  }
+}</code>" data-collapsed=".card { ... }"><code>.card { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>ÚLTIMAS REPARACIONES Y SERVICIOS CARDS</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section><section class="main__sub-section" id="cards-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="cards-variable-altura-cards"><h3 class="item__heading"><a class="item__name" href="#variable-altura-cards">altura-cards</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$altura-cards: 200px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Cards</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="carrusel"><div class="container">carrusel</div></h1><section class="main__sub-section" id="carrusel-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="carrusel-css-*"><h3 class="item__heading"><a class="item__name" href="#css-*">*</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>* {
+  box-sizing: border-box;
+}</code>" data-collapsed="* { ... }"><code>* { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="colores"><div class="container">colores</div></h1><div class="main__description"><div class="container"><p>Color de fondo de la empresa</p></div></div><section class="main__sub-section" id="colores-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colores-variable-color-empresa"><h3 class="item__heading"><a class="item__name" href="#variable-color-empresa">color-empresa</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-empresa: #02989f;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Colores</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="contacto"><div class="container">contacto</div></h1><section class="main__sub-section" id="contacto-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="contacto-css-.contPrincipal"><h3 class="item__heading"><a class="item__name" href="#css-.contPrincipal">.contPrincipal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contPrincipal {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: $tamanoContacto;
+  }
+}</code>" data-collapsed=".contPrincipal { ... }"><code>.contPrincipal { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="diseño"><div class="container">diseño</div></h1><section class="main__sub-section" id="diseño-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="diseño-css-///Tamaño y borde de las row
+.row"><h3 class="item__heading"><a class="item__name" href="#css-///Tamaño y borde de las row
+.row">///Tamaño y borde de las row .row</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>///Tamaño y borde de las row
+.row {
+  @include flex_mixin;
+}</code>" data-collapsed="///Tamaño y borde de las row
+.row { ... }"><code>///Tamaño y borde de las row
+.row { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section><section class="main__sub-section" id="diseño-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="diseño-function-anchura_col"><h3 class="item__heading"><a class="item__name" href="#function-anchura_col">anchura_col</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function anchura_col($i) { 
+  //i será el valor con el que será llamada la función
+  @return (100 / 8) * $i + &quot;%&quot;;
+ }" data-collapsed="@function anchura_col($i) { ... }"><code>@function anchura_col($i) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para determinar la anchura del elemento</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$i</code></th><td data-label="desc"><p>Número de casillas del alcho de la fila que va a ocupar</p></td><td data-label="type"><code>Integer</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Integer</code> &mdash;<p>El porcentaje del ancho correspondiente al elemento</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="estilos"><div class="container">estilos</div></h1><section class="main__sub-section" id="estilos-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="estilos-css-/*      Estilos generales   */
+/// Parte princial
+#principal"><h3 class="item__heading"><a class="item__name" href="#css-/*      Estilos generales   */
+/// Parte princial
+#principal">/* Estilos generales */ /// Parte princial #principal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/*      Estilos generales   */
+/// Parte princial
+#principal {
+  background-color: $color-principal;
+}</code>" data-collapsed="/*      Estilos generales   */
+/// Parte princial
+#principal { ... }"><code>/*      Estilos generales   */
+/// Parte princial
+#principal { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="footer"><div class="container">footer</div></h1><section class="main__sub-section" id="footer-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="footer-css-/*      FOOTER  */
+#footer"><h3 class="item__heading"><a class="item__name" href="#css-/*      FOOTER  */
+#footer">/* FOOTER */ #footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/*      FOOTER  */
+#footer {
+  background-color: rgba(37, 37, 37, 0.966);
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  padding: $padd-medio;
+  p {
+    text-align: center;
+    font-size: $tamanoFooter;
+    color: white;
+  }
+  a {
+    color: white;
+    font-size: $tamanoFooter;
+    text-decoration: none;
+  }
+  #logo {
+    img {
+      width: 20%;
+      opacity: 0.75;
+    }
+  }
+  #email {
+    padding: 1rem;
+  }
+  .rrss {
+    font-size: 4vw;
+    color: $color-empresa;
+  }
+}</code>" data-collapsed="/*      FOOTER  */
+#footer { ... }"><code>/*      FOOTER  */
+#footer { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="formulario"><div class="container">formulario</div></h1><section class="main__sub-section" id="formulario-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="formulario-css-/*     ESTILOS FORMULARIOS   */
+#form"><h3 class="item__heading"><a class="item__name" href="#css-/*     ESTILOS FORMULARIOS   */
+#form">/* ESTILOS FORMULARIOS */ #form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/*     ESTILOS FORMULARIOS   */
+#form {
+  input[type=&quot;text&quot;],
+  select {
+    width: $anch-100;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  input[type=&quot;submit&quot;] {
+    width: $anch-100;
+    background-color: $color-empresa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=&quot;submit&quot;]:hover {
+    background-color: $fondoFormularios;
+  }
+
+  div {
+    background-color: $fondoDivFormularios;
+    padding: 20px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+}</code>" data-collapsed="/*     ESTILOS FORMULARIOS   */
+#form { ... }"><code>/*     ESTILOS FORMULARIOS   */
+#form { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="formularios"><div class="container">formularios</div></h1><div class="main__description"><div class="container"><p>Color de fondo del formulario</p></div></div><section class="main__sub-section" id="formularios-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="formularios-variable-fondoFormularios"><h3 class="item__heading"><a class="item__name" href="#variable-fondoFormularios">fondoFormularios</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$fondoFormularios: #06686d;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables de formularios</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="fuentes"><div class="container">fuentes</div></h1><div class="main__description"><div class="container"><p>Tipo de letra de la página</p></div></div><section class="main__sub-section" id="fuentes-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="fuentes-variable-tipoletra"><h3 class="item__heading"><a class="item__name" href="#variable-tipoletra">tipoletra</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$tipoletra: &quot;Ubuntu&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables de fuentes</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="header"><div class="container">header</div></h1><div class="main__description"><div class="container"><p>Altura del logo cabecera</p></div></div><section class="main__sub-section" id="header-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="header-css-/*     HEADER   */
+
+#header"><h3 class="item__heading"><a class="item__name" href="#css-/*     HEADER   */
+
+#header">/* HEADER */ #header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/*     HEADER   */
+
+#header {
+  background-image: url(&quot;IMG/motherboard.jpg&quot;);
+  height: 300%;
+  /// Logo
+  #logocabecera {
+    img {
+      width: $anch-100;
+      max-width: $logocabecera-anch;
+      height: $logocabecera-alt;
+    }
+  }
+  /// Icono del menú
+  #logomenu {
+    margin: auto;
+    img {
+      width: $logomenu-anch;
+      height: $logomenu-alt;
+    }
+    .icon {
+      font-size: 10vw;
+      color: $color-empresa;
+      margin-right: 3rem;
+      margin-left: 1rem;
+    }
+  }
+  /// Parte superior cabecera (menú)
+  #parteSuperior {
+    background-color: $fondo-menu;
+    display: flex;
+    justify-content: space-between;
+  }
+  /// Botones de menú
+  #menu {
+    display: flex;
+    a {
+      position: relative;
+    }
+    .btn {
+      background-color: $color-empresa;
+      color: white;
+      padding: 1rem;
+      padding-left: $padd-medio;
+      padding-right: $padd-medio;
+      font-size: $tamanoHeader;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    :hover {
+      background-color: #06686d;
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+  /// Parte inicio
+  #titulo {
+    padding: 1rem;
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 7vw;
+      background-color: rgba(51, 51, 51, 0.514);
+      padding: 1rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}</code>" data-collapsed="/*     HEADER   */
+
+#header { ... }"><code>/*     HEADER   */
+
+#header { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section><section class="main__sub-section" id="header-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="header-variable-logocabecera-alt"><h3 class="item__heading"><a class="item__name" href="#variable-logocabecera-alt">logocabecera-alt</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$logocabecera-alt: 100%;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables del header</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="letra"><div class="container">letra</div></h1><section class="main__sub-section" id="letra-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="letra-mixin-tipo_letra"><h3 class="item__heading"><a class="item__name" href="#mixin-tipo_letra">tipo_letra</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin tipo_letra($letra) { 
+  font-family: $letra;
+ }" data-collapsed="@mixin tipo_letra($letra) { ... }"><code>@mixin tipo_letra($letra) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para cambiar el tipo de fuente</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$letra</code></th><td data-label="desc"><p>-&gt; Letra para sustituir</p></td><td data-label="type"><code>Letra</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="mixins"><div class="container">mixins</div></h1><section class="main__sub-section" id="mixins-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="mixins-css-/// Da un padding general
+/// @group padding
+/// @parameter"><h3 class="item__heading"><a class="item__name" href="#css-/// Da un padding general
+/// @group padding
+/// @parameter">/// Da un padding general /// @group padding /// @parameter</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/// Da un padding general
+/// @group padding
+/// @parameter {
+  float
+}</code>" data-collapsed="/// Da un padding general
+/// @group padding
+/// @parameter { ... }"><code>/// Da un padding general
+/// @group padding
+/// @parameter { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section><section class="main__sub-section" id="mixins-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="mixins-mixin-centrado"><h3 class="item__heading"><a class="item__name" href="#mixin-centrado">centrado</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin centrado() { 
+  margin: 0 auto;
+ }" data-collapsed="@mixin centrado() { ... }"><code>@mixin centrado() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Posiciona elemento en el centro de la página</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="mixins-mixin-flex_mixin"><h3 class="item__heading"><a class="item__name" href="#mixin-flex_mixin">flex_mixin</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex_mixin() { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }" data-collapsed="@mixin flex_mixin() { ... }"><code>@mixin flex_mixin() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos al elemento principal y la fila de la maquetación</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="nosotros"><div class="container">nosotros</div></h1><section class="main__sub-section" id="nosotros-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="nosotros-css-#quienesSomos"><h3 class="item__heading"><a class="item__name" href="#css-#quienesSomos">#quienesSomos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#quienesSomos {
+  text-align: center;
+
+  img {
+    width: $anch-100;
+  }
+  h3 {
+    color: $color-empresa;
+    text-align: center;
+  }
+}</code>" data-collapsed="#quienesSomos { ... }"><code>#quienesSomos { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="padding"><div class="container">padding</div></h1><section class="main__sub-section" id="padding-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="padding-mixin-padding"><h3 class="item__heading"><a class="item__name" href="#mixin-padding">padding</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin padding($padd) { 
+  padding: #{$padd};
+ }" data-collapsed="@mixin padding($padd) { ... }"><code>@mixin padding($padd) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Da un padding general</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$padd</code></th><td data-label="desc"><p>--&gt; cantidad de padding</p></td><td data-label="type"><code>Float</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="principal"><div class="container">principal</div></h1><section class="main__sub-section" id="principal-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="principal-css-.contPrincipal"><h3 class="item__heading"><a class="item__name" href="#css-.contPrincipal">.contPrincipal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contPrincipal {
+  padding: 2rem;
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+}</code>" data-collapsed=".contPrincipal { ... }"><code>.contPrincipal { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><pre><code>  PARTE PRINCIPAL</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="servicios"><div class="container">servicios</div></h1><section class="main__sub-section" id="servicios-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="servicios-css-#servicios"><h3 class="item__heading"><a class="item__name" href="#css-#servicios">#servicios</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#servicios {
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 4vw;
+    bottom: 8px;
+    left: 16px;
+  }
+  .texto {
+    background-color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+  }
+  img {
+    opacity: 0.5;
+  }
+}</code>" data-collapsed="#servicios { ... }"><code>#servicios { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="serviciotecnico"><div class="container">serviciotecnico</div></h1><section class="main__sub-section" id="serviciotecnico-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="serviciotecnico-css-#servicioTecnico"><h3 class="item__heading"><a class="item__name" href="#css-#servicioTecnico">#servicioTecnico</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#servicioTecnico {
+  img {
+    max-width: $anch-100;
+    align-content: center;
+  }
+}</code>" data-collapsed="#servicioTecnico { ... }"><code>#servicioTecnico { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><pre><code>  SERVICIO TÉCNICO</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="temas"><div class="container">temas</div></h1><section class="main__sub-section" id="temas-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="temas-css-/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme"><h3 class="item__heading"><a class="item__name" href="#css-/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme">/// Variables para controlar si quiero tema oscuro o claro /// Tema claro (true para seleccionar) $light-theme: false; /// Tema oscuro (true para seleccionar) $dark-theme: true; /// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto) $fondo-menu: black; /// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro @if $light-theme</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme {
+  $fondo-menu: rgba(241, 229, 229, 0.774);
+}</code>" data-collapsed="/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme { ... }"><code>/// Variables para controlar si quiero tema oscuro o claro
+/// Tema claro (true para seleccionar)
+$light-theme: false;
+/// Tema oscuro (true para seleccionar)
+$dark-theme: true;
+
+/// Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)
+$fondo-menu: black;
+
+/// Estructura de control que asigna a la variable $fondo-menu el valor adecuado en función si el tema es oscuro o claro
+
+@if $light-theme { ... }</code></pre></div></section></section></section><section class="main__section"><h1 class="main__heading" id="texto"><div class="container">texto</div></h1><section class="main__sub-section" id="texto-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="texto-css-.text"><h3 class="item__heading"><a class="item__name" href="#css-.text">.text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}</code>" data-collapsed=".text { ... }"><code>.text { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>texto interno</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="texto-css-body"><h3 class="item__heading"><a class="item__name" href="#css-body">body</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body {
+  @include tipo_letra($tipoletra);
+}</code>" data-collapsed="body { ... }"><code>body { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tipografía</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-.slideshow-container"><h3 class="item__heading"><a class="item__name" href="#css-.slideshow-container">.slideshow-container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}</code>" data-collapsed=".slideshow-container { ... }"><code>.slideshow-container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>General</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-.numbertext"><h3 class="item__heading"><a class="item__name" href="#css-.numbertext">.numbertext</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}</code>" data-collapsed=".numbertext { ... }"><code>.numbertext { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>contador fotos</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-.dot"><h3 class="item__heading"><a class="item__name" href="#css-.dot">.dot</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $color-empresa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}</code>" data-collapsed=".dot { ... }"><code>.dot { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>puntitos de &quot;pagination&quot;</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-.fade"><h3 class="item__heading"><a class="item__name" href="#css-.fade">.fade</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}</code>" data-collapsed=".fade { ... }"><code>.fade { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>animación</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-.row"><h3 class="item__heading"><a class="item__name" href="#css-.row">.row</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.row {
+  @include flex_mixin;
+}</code>" data-collapsed=".row { ... }"><code>.row { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño y borde de las row</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-#principal"><h3 class="item__heading"><a class="item__name" href="#css-#principal">#principal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#principal {
+  background-color: $color-principal;
+}</code>" data-collapsed="#principal { ... }"><code>#principal { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Parte princial</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  font-size: $tamano-texto-principal;
+  text-align: justify;
+  color: $color-texto-principal;
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Alineación párrafos</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-#logocabecera"><h3 class="item__heading"><a class="item__name" href="#css-#logocabecera">#logocabecera</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#logocabecera {
+  img {
+      width: $anch-100;
+      max-width: $logocabecera-anch;
+      height: $logocabecera-alt;
+    }
+}</code>" data-collapsed="#logocabecera { ... }"><code>#logocabecera { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Logo</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-#logomenu"><h3 class="item__heading"><a class="item__name" href="#css-#logomenu">#logomenu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#logomenu {
+  margin: auto;
+    img {
+      width: $logomenu-anch;
+      height: $logomenu-alt;
+    }
+    .icon {
+      font-size: 10vw;
+      color: $color-empresa;
+      margin-right: 3rem;
+      margin-left: 1rem;
+    }
+}</code>" data-collapsed="#logomenu { ... }"><code>#logomenu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Icono del menú</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-#parteSuperior"><h3 class="item__heading"><a class="item__name" href="#css-#parteSuperior">#parteSuperior</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#parteSuperior {
+  background-color: $fondo-menu;
+    display: flex;
+    justify-content: space-between;
+}</code>" data-collapsed="#parteSuperior { ... }"><code>#parteSuperior { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Parte superior cabecera (menú)</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-#menu"><h3 class="item__heading"><a class="item__name" href="#css-#menu">#menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#menu {
+  display: flex;
+    a {
+      position: relative;
+    }
+    .btn {
+      background-color: $color-empresa;
+      color: white;
+      padding: 1rem;
+      padding-left: $padd-medio;
+      padding-right: $padd-medio;
+      font-size: $tamanoHeader;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    :hover {
+      background-color: #06686d;
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+}</code>" data-collapsed="#menu { ... }"><code>#menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Botones de menú</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-#titulo"><h3 class="item__heading"><a class="item__name" href="#css-#titulo">#titulo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>#titulo {
+  padding: 1rem;
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 7vw;
+      background-color: rgba(51, 51, 51, 0.514);
+      padding: 1rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+}</code>" data-collapsed="#titulo { ... }"><code>#titulo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Parte inicio</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-css-/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter"><h3 class="item__heading"><a class="item__name" href="#css-/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter">/// Estilos para cambiar el tipo de fuente /// @group letra /// @parameter</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter {
+  letra
+}</code>" data-collapsed="/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter { ... }"><code>/// Estilos para cambiar el tipo de fuente
+/// @group letra
+/// @parameter { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>MIXINS PARA LAS LETRAS</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-light-theme"><h3 class="item__heading"><a class="item__name" href="#variable-light-theme">light-theme</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$light-theme: false;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables para controlar si quiero tema oscuro o claro Tema claro (true para seleccionar)</p></div></section><section class="main__item container item" id="undefined-variable-dark-theme"><h3 class="item__heading"><a class="item__name" href="#variable-dark-theme">dark-theme</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$dark-theme: true;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tema oscuro (true para seleccionar)</p></div></section><section class="main__item container item" id="undefined-variable-fondo-menu"><h3 class="item__heading"><a class="item__name" href="#variable-fondo-menu">fondo-menu</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$fondo-menu: black;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Inicializo la variable que cambia en la página el color de fondo del menú (negro por defecto)</p></div></section><section class="main__item container item" id="undefined-variable-anch-100"><h3 class="item__heading"><a class="item__name" href="#variable-anch-100">anch-100</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anch-100: 100%;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Anchura de 100%</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-padd-medio"><h3 class="item__heading"><a class="item__name" href="#variable-padd-medio">padd-medio</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$padd-medio: 0.5rem;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Padding de 0.5 rem</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-logocabecera-anch"><h3 class="item__heading"><a class="item__name" href="#variable-logocabecera-anch">logocabecera-anch</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$logocabecera-anch: 300px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Anchura del logo cabecera</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-logomenu-alt"><h3 class="item__heading"><a class="item__name" href="#variable-logomenu-alt">logomenu-alt</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$logomenu-alt: 75px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Altura logo menú</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-logomenu-anch"><h3 class="item__heading"><a class="item__name" href="#variable-logomenu-anch">logomenu-anch</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$logomenu-anch: 75px;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Anchura del logo menú</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-tamanoletratablet"><h3 class="item__heading"><a class="item__name" href="#variable-tamanoletratablet">tamanoletratablet</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$tamanoletratablet: 2vw;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de letra en tablet</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-tamanoContacto"><h3 class="item__heading"><a class="item__name" href="#variable-tamanoContacto">tamanoContacto</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$tamanoContacto: 2vw;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de letra Contacto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-tamanoHeader"><h3 class="item__heading"><a class="item__name" href="#variable-tamanoHeader">tamanoHeader</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$tamanoHeader: 2vw;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de letra header</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-tamanoFooter"><h3 class="item__heading"><a class="item__name" href="#variable-tamanoFooter">tamanoFooter</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$tamanoFooter: 2vw;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de letra footer</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section><section class="main__item container item" id="undefined-variable-fondoDivFormularios"><h3 class="item__heading"><a class="item__name" href="#variable-fondoDivFormularios">fondoDivFormularios</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$fondoDivFormularios: #f2f2f2;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color de fondo de los div de los furmularios</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>David Gonzalez</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Tarea1sass</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

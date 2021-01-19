@@ -71,6 +71,10 @@ li.dropdown {
   display: block;
 }
 
+body {
+  font-family: Montserrat, sans-serif;
+}
+
 /*********************************** Actividad ****************************************/
 
 .lista2:first-child {

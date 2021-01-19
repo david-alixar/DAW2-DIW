@@ -1,0 +1,20 @@
+{
+  "name": "tarea1Sass",
+  "version": "1.0.0",
+  "description": "Tarea Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass"
+  },
+  "keywords": [
+    "tarea",
+    "inicial",
+    "sass"
+  ],
+  "author": "David Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.11"
+  }
+}

@@ -1,0 +1,102 @@
+//// @access public
+//// @author David Gonzalez
+
+/*      ESTILOS CARRUSEL   */
+
+/// @group carrusel
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+.img-carru {
+  vertical-align: middle;
+  width: $anch-100;
+  height: $altura-cards;
+}
+
+/// General
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/// texto interno
+/// @group texto
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/// contador fotos
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/// puntitos de "pagination"
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $color-empresa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/// animación
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/// Responsividad para tablet
+/// @group tablet
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .img-carru {
+    height: 300px;
+  }
+}

@@ -1,0 +1,21 @@
+//// @access public
+//// @author David Gonzalez
+
+/*  SERVICIOS  */
+/// @group servicios
+#servicios {
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 4vw;
+    bottom: 8px;
+    left: 16px;
+  }
+  .texto {
+    background-color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+  }
+  img {
+    opacity: 0.5;
+  }
+}

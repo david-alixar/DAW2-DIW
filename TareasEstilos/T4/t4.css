@@ -70,3 +70,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+body {
+  font-family: Montserrat, sans-serif;
+}

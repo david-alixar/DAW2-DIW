@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/*      Estilos generales   */
+#principal {
+  background-color: #dedede; }
+
+body {
+  font-family: "Ubuntu", sans-serif; }
+
+p {
+  font-size: 3vw;
+  text-align: justify;
+  color: #3f3e3e; }
+
+.contPrincipal {
+  padding: 2rem; }
+  .contPrincipal h2 {
+    text-align: center;
+    margin-top: 0; }
+
+#servicioTecnico img {
+  max-width: 100%;
+  align-content: center; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 1rem; }
+  .card :hover {
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2); }
+  .card img {
+    width: 100%; }
+  .card p {
+    padding: 0.5rem; }
+  .card a {
+    color: #02989f;
+    padding: 0.5rem;
+    font-size: 3vw; }
+  .card h3 {
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 4vw; }
+
+/*DISEÑO DE LA PÁGINA   */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.row > .col-1 {
+  width: 12.5%; }
+
+.row > .col-2 {
+  width: 25%; }
+
+.row > .col-3 {
+  width: 37.5%; }
+
+.row > .col-4 {
+  width: 50%; }
+
+.row > .col-5 {
+  width: 62.5%; }
+
+.row > .col-6 {
+  width: 75%; }
+
+.row > .col-7 {
+  width: 87.5%; }
+
+.row > .col-8 {
+  width: 100%; }
+
+@media screen and (min-width: 576px) {
+  .row > .col-sm-1 {
+    width: 12.5%; }
+
+  .row > .col-sm-2 {
+    width: 25%; }
+
+  .row > .col-sm-3 {
+    width: 37.5%; }
+
+  .row > .col-sm-4 {
+    width: 50%; }
+
+  .row > .col-sm-5 {
+    width: 62.5%; }
+
+  .row > .col-sm-6 {
+    width: 75%; }
+
+  .row > .col-sm-7 {
+    width: 87.5%; }
+
+  .row > .col-sm-8 {
+    width: 100%; } }
+@media screen and (min-width: 992px) {
+  .row > .col-lg-1 {
+    width: 12.5%; }
+
+  .row > .col-lg-2 {
+    width: 25%; }
+
+  .row > .col-lg-3 {
+    width: 37.5%; }
+
+  .row > .col-lg-4 {
+    width: 50%; }
+
+  .row > .col-lg-5 {
+    width: 62.5%; }
+
+  .row > .col-lg-6 {
+    width: 75%; }
+
+  .row > .col-lg-7 {
+    width: 87.5%; }
+
+  .row > .col-lg-8 {
+    width: 100%; } }
+/*      TAMAÑOS PANTALLA   */
+@media only screen and (min-width: 576px) {
+  .icon {
+    display: none; }
+
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; }
+
+  p {
+    font-size: 2vw; }
+
+  .slideshow-container {
+    width: 60%; }
+
+  #servicioTecnico {
+    align-items: center; }
+    #servicioTecnico img {
+      height: 75px;
+      padding-right: 0.5rem; }
+    #servicioTecnico p {
+      font-size: 2vw; }
+
+  .card {
+    width: 70%; }
+    .card p {
+      font-size: 1.5vw; }
+    .card h3 {
+      font-size: 2vw; }
+    .card a {
+      font-size: 2vw; }
+
+  #servicios {
+    justify-content: space-around; }
+    #servicios .card {
+      width: 100%; }
+    #servicios a {
+      font-size: 2vw; } }
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 1.5vw; }
+
+  #ultimasReparaciones {
+    padding-top: 0; }
+    #ultimasReparaciones .card {
+      width: 100%; }
+
+  #principal {
+    justify-content: space-around; }
+
+  #servicioTecnico {
+    padding-bottom: 40rem; }
+    #servicioTecnico img {
+      height: 60px;
+      padding-right: 0.5rem; }
+    #servicioTecnico p {
+      font-size: 1.5vw; }
+
+  .slideshow-container {
+    width: 90%; }
+
+  .textos {
+    height: 1000px; } }
+/*      ESTILOS CARRUSEL   */
+* {
+  box-sizing: border-box; }
+
+.mySlides {
+  display: none; }
+
+.img-carru {
+  vertical-align: middle;
+  width: 100%;
+  height: 200px; }
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #02989f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active {
+  background-color: #717171; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px; } }
+@media only screen and (min-width: 576px) {
+  .img-carru {
+    height: 300px; } }
+/*     ESTILOS FORMULARIOS   */
+#form input[type="text"],
+#form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+#form input[type="submit"] {
+  width: 100%;
+  background-color: #02989f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer; }
+#form input[type="submit"]:hover {
+  background-color: #06686d; }
+#form div {
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2); }
+
+/*     HEADER   */
+#header {
+  background-image: url("IMG/motherboard.jpg");
+  height: 300%; }
+  #header #logocabecera img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%; }
+  #header #logomenu {
+    margin: auto; }
+    #header #logomenu img {
+      width: 75px;
+      height: 75px; }
+    #header #logomenu .icon {
+      font-size: 10vw;
+      color: #02989f;
+      margin-right: 3rem;
+      margin-left: 1rem; }
+  #header #parteSuperior {
+    background-color: rgba(51, 51, 51, 0.76);
+    display: flex;
+    justify-content: space-between; }
+  #header #menu {
+    display: flex; }
+    #header #menu a {
+      position: relative; }
+    #header #menu .btn {
+      background-color: #02989f;
+      color: white;
+      padding: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 2vw;
+      border: none;
+      cursor: pointer;
+      text-decoration: none; }
+    #header #menu :hover {
+      background-color: #06686d;
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2); }
+  #header #titulo {
+    padding: 1rem; }
+    #header #titulo h1 {
+      text-align: center;
+      color: white;
+      font-size: 7vw;
+      background-color: rgba(51, 51, 51, 0.514);
+      padding: 1rem;
+      margin-bottom: 0;
+      margin-top: 0; }
+
+/*      FOOTER  */
+#footer {
+  background-color: rgba(37, 37, 37, 0.966);
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  padding: 0.5rem; }
+  #footer p {
+    text-align: center;
+    font-size: 2vw;
+    color: white; }
+  #footer a {
+    color: white;
+    font-size: 2vw;
+    text-decoration: none; }
+  #footer #logo img {
+    width: 20%;
+    opacity: 0.75; }
+  #footer #email {
+    padding: 1rem; }
+  #footer .rrss {
+    font-size: 4vw;
+    color: #02989f; }
+
+@media only screen and (min-width: 576px) {
+  #footer {
+    justify-content: space-around; }
+    #footer #logo img {
+      width: 150px !important;
+      height: 80px; }
+    #footer p {
+      font-size: 1.5vw; }
+    #footer a {
+      font-size: 1.5vw; }
+    #footer #email {
+      padding: 0rem; } }
+/*  SERVICIOS  */
+#servicios a {
+  color: white;
+  text-decoration: none;
+  font-size: 4vw;
+  bottom: 8px;
+  left: 16px; }
+#servicios .texto {
+  background-color: rgba(0, 0, 0, 0.74);
+  text-align: center; }
+#servicios img {
+  opacity: 0.5; }
+
+/*   NOSOTROS  */
+#quienesSomos {
+  text-align: center; }
+  #quienesSomos img {
+    width: 100%; }
+  #quienesSomos h3 {
+    color: #02989f;
+    text-align: center; }
+
+#marcasyalianzas img {
+  margin-right: auto; }
+
+@media only screen and (min-width: 576px) {
+  .fotoNosotros {
+    margin: auto;
+    padding: 1rem; }
+
+  #marcasyalianzas img {
+    padding-right: 0.5rem;
+    height: 40px;
+    margin: auto; }
+
+  .fotosMarcas {
+    padding: 0.5rem; }
+    .fotosMarcas img {
+      height: 50px; } }
+@media only screen and (min-width: 992px) {
+  #mision {
+    padding-right: 0.5rem; }
+
+  #vision {
+    padding-left: 0.5rem; } }
+/*      CONTACTO  */
+.contPrincipal {
+  text-align: center; }
+  .contPrincipal a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw; }
+
+#portugal h3 {
+  color: #02989f; }
+#portugal .card {
+  width: 100%;
+  height: 200px; }
+#portugal p {
+  text-align: center; }
+
+#espana h3 {
+  color: #02989f; }
+#espana .card {
+  width: 100%;
+  height: 200px; }
+#espana p {
+  text-align: center; }
+
+#info h3 {
+  color: #02989f; }
+#info p {
+  text-align: center; }
+
+#form {
+  text-align: left; }
+  #form h3 {
+    text-align: center; }
+
+@media only screen and (min-width: 992px) {
+  #portugal {
+    padding: 0.5rem; }
+
+  #espana {
+    padding: 0.5rem; }
+
+  .contPrincipal a {
+    font-size: 1.5vw; } }
+
+/*# sourceMappingURL=styles.css.map */

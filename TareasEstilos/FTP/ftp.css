@@ -90,3 +90,7 @@ div.etiqueta {
 div.imagenes {
   padding: 3rem;
 }
+
+body {
+  font-family: Montserrat, sans-serif;
+}

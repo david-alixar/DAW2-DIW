@@ -1,0 +1,59 @@
+//// @access public
+//// @author David Gonzalez
+
+/// @group footer
+/*      FOOTER  */
+#footer {
+  background-color: rgba(37, 37, 37, 0.966);
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+  padding: $padd-medio;
+  p {
+    text-align: center;
+    font-size: $tamanoFooter;
+    color: white;
+  }
+  a {
+    color: white;
+    font-size: $tamanoFooter;
+    text-decoration: none;
+  }
+  #logo {
+    img {
+      width: 20%;
+      opacity: 0.75;
+    }
+  }
+  #email {
+    padding: 1rem;
+  }
+  .rrss {
+    font-size: 4vw;
+    color: $color-empresa;
+  }
+}
+
+/// Responsividad para tablet
+/// @group tablet
+@media only screen and (min-width: 576px) {
+  #footer {
+    justify-content: space-around;
+
+    #logo {
+      img {
+        width: 150px !important;
+        height: 80px;
+      }
+    }
+    p {
+      font-size: 1.5vw;
+    }
+    a {
+      font-size: 1.5vw;
+    }
+    #email {
+      padding: 0rem;
+    }
+  }
+}

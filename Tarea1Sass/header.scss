@@ -1,0 +1,73 @@
+//// @access public
+//// @author David Gonzalez
+
+/// @group header
+/*     HEADER   */
+
+#header {
+  background-image: url("IMG/motherboard.jpg");
+  height: 300%;
+  /// Logo
+  #logocabecera {
+    img {
+      width: $anch-100;
+      max-width: $logocabecera-anch;
+      height: $logocabecera-alt;
+    }
+  }
+  /// Icono del menú
+  #logomenu {
+    margin: auto;
+    img {
+      width: $logomenu-anch;
+      height: $logomenu-alt;
+    }
+    .icon {
+      font-size: 10vw;
+      color: $color-empresa;
+      margin-right: 3rem;
+      margin-left: 1rem;
+    }
+  }
+  /// Parte superior cabecera (menú)
+  #parteSuperior {
+    background-color: $fondo-menu;
+    display: flex;
+    justify-content: space-between;
+  }
+  /// Botones de menú
+  #menu {
+    display: flex;
+    a {
+      position: relative;
+    }
+    .btn {
+      background-color: $color-empresa;
+      color: white;
+      padding: 1rem;
+      padding-left: $padd-medio;
+      padding-right: $padd-medio;
+      font-size: $tamanoHeader;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    :hover {
+      background-color: #06686d;
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+  /// Parte inicio
+  #titulo {
+    padding: 1rem;
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 7vw;
+      background-color: rgba(51, 51, 51, 0.514);
+      padding: 1rem;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+//// @access public
+//// @author David Gonzalez
+
+/// @group estilos
+/*      Estilos generales   */
+/// Parte princial
+#principal {
+  background-color: $color-principal;
+}
+/// Tipografía
+/// @group texto
+body {
+  @include tipo_letra($tipoletra);
+}
+/// Alineación párrafos
+p {
+  font-size: $tamano-texto-principal;
+  text-align: justify;
+  color: $color-texto-principal;
+}
+
+///       PARTE PRINCIPAL
+/// @group principal
+.contPrincipal {
+  padding: 2rem;
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+///       SERVICIO TÉCNICO
+/// @group servicioTecnico
+#servicioTecnico {
+  img {
+    max-width: $anch-100;
+    align-content: center;
+  }
+}
+
+/// ÚLTIMAS REPARACIONES Y SERVICIOS
+///  CARDS
+/// @group cards
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 1rem;
+
+  :hover {
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: $anch-100;
+  }
+  p {
+    padding: 0.5rem;
+  }
+  a {
+    color: $color-empresa;
+    padding: 0.5rem;
+    font-size: 3vw;
+  }
+  h3 {
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 4vw;
+  }
+}

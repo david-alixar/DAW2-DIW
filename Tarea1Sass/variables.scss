@@ -1,0 +1,57 @@
+//// @access public
+//// @author David Gonzalez
+
+//   VARIABLES
+
+/// @group variables
+
+/// Anchura de 100%
+$anch-100: 100%;
+
+/// Padding de 0.5 rem
+$padd-medio: 0.5rem;
+
+/// Variables del header
+/// @group header
+/// Altura del logo cabecera
+$logocabecera-alt: 100%;
+/// Anchura del logo cabecera
+$logocabecera-anch: 300px;
+/// Altura logo menú
+$logomenu-alt: 75px;
+/// Anchura del logo menú
+$logomenu-anch: 75px;
+
+/// Variables de fuentes
+/// @group fuentes
+/// Tipo de letra de la página
+$tipoletra: "Ubuntu", sans-serif;
+/// Tamaño de letra en tablet
+$tamanoletratablet: 2vw;
+/// Tamaño de letra Contacto
+$tamanoContacto: 2vw;
+/// Tamaño de letra header
+$tamanoHeader: 2vw;
+/// Tamaño de letra footer
+$tamanoFooter: 2vw;
+$tamano-texto-principal: 3vw;
+
+/// Colores
+/// @group colores
+/// Color de fondo de la empresa
+$color-empresa: #02989f;
+$color-principal: rgb(222, 222, 222);
+$color-texto-principal: rgb(63, 62, 62);
+
+/// Cards
+/// @group cards
+/// Altura de las cards
+
+$altura-cards: 200px;
+
+/// Variables de formularios
+/// @group formularios
+/// Color de fondo del formulario
+$fondoFormularios: #06686d;
+/// Color de fondo de los div de los furmularios
+$fondoDivFormularios: #f2f2f2;
